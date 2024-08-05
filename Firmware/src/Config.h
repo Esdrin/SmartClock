@@ -1,8 +1,11 @@
 // 板名称
 #define AP_NAME "SmartClock"
+
 // NTP服务器设置
 #define NTP_SERVER "ntp1.aliyun.com"
 #define NTP_UPDATE_INTERVAL 10*60*1000
+// 时区设置
+#define TIME_OFFSET 28800
 
 // 板配置
 #define RESET_PIN 19
@@ -33,8 +36,6 @@
 #define SCREEN_HEIGHT   64
 #define SCREEN_RESET    -1
 
-// 时区设置
-#define TIME_OFFSET 28800
 
 // MQTT 配置
 #define MQTT_PUBLISH_INTERVAL 60*1000
@@ -43,4 +44,4 @@
 #define WIFI_RECONNECT_INTERVAL 30*1000
 
 // 天气API配置
-#define WEATHER_INTERVAL 2*60*1000
+#define WEATHER_INTERVAL 2*60*60*1000
